@@ -1,0 +1,7 @@
+jwt is bearer token that means those who have/bear the token that can access 
+
+
+we only store refresh token in database not access token
+refresh token have greater expiry time
+
+refresh has less data
