@@ -5,3 +5,8 @@ we only store refresh token in database not access token
 refresh token have greater expiry time
 
 refresh has less data
+
+for production app:
+we usually follow two step to upload file
+we first upload file temporarily in local storage so that we can make re-attempts
+and second upload file to cloud
