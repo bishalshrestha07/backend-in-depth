@@ -20,4 +20,11 @@ app.use(express.static("public"));
 // In order to set and read cookie from browser (CRUD)
 app.use(cookieParser());
 
+// routes import
+import userRouter from "./routes/user.routes.js";
+
+// route declaration (router xuttai lekhexam so we have use as middleware)
+// good practice, if we are defining api, we have to mention api versioning
+app.use("/api/v1/users", userRouter);
+
 export { app };

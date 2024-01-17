@@ -10,8 +10,9 @@
 //   }
 // };
 
+// Higher order function is the function take function as the argument and return function
 const asyncHandler = (requestHandler) => {
-  (req, res, next) => {
+  return (req, res, next) => {
     Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err));
   };
 };
